@@ -20,7 +20,6 @@ def solution(answers):
             answer.append(numname[i])
     return answer
 
-
 answers=[1,3,2,4,2]
 
 print(solution(answers))
