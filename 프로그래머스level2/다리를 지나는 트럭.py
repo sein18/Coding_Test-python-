@@ -1,19 +1,31 @@
-from tokenize import Number
 
+def solution(bridge_length, weight, truck_weights):
+    x = [0]*bridge_length
+    answer = 0
+    
+    while True:
+        if truck_weights==[] and sum(x)==0:
+            break
+        else:
+            answer+=1
+            if(sum(x)==0):
+                answer-=1
 
-car = [7,4,5,6]
-car1 =[]
-t=0
-bridge_length=2
-truck_weight=10
-num=0
-bsize=0
-for i in range(10000):
+            if truck_weights==[]:
+                x.append(0)
+                del(x[0]) 
+            elif sum(x) + truck_weights[0] <= weight:
+                x.append(truck_weights[0])
+                del(truck_weights[0])
+                del(x[0])
+            else:
+                x.append(0)
+                del(x[0]) 
 
-    if(len(car1)<=bridge_length):
-        break
+    return answer+1
+ 
+ 
+bridge_length, weight, truck_weights = 100,100, [10]
 
-    if(car==[]):
-        break
+print(solution(bridge_length, weight, truck_weights))
 
-print(sum(car))
