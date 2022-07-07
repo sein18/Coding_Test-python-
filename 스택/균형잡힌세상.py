@@ -12,6 +12,6 @@ while True:
                 del(li[len(li)-2])
                 del(li[len(li)-1]) 
     if(len(li)==0):
-        print('YES')
+        print('yes')
     else:
-        print('NO')
+        print('no')

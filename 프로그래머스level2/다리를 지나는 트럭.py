@@ -8,6 +8,7 @@ def solution(bridge_length, weight, truck_weights):
             break
         else:
             answer+=1
+            print(x)
             if(sum(x)==0):
                 answer-=1
 
@@ -25,7 +26,7 @@ def solution(bridge_length, weight, truck_weights):
     return answer+1
  
  
-bridge_length, weight, truck_weights = 100,100, [10]
+bridge_length, weight, truck_weights = 100,100,[10,10,10,10,10,10,10,10,10,10]
 
 print(solution(bridge_length, weight, truck_weights))
 
