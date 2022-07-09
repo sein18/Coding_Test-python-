@@ -7,10 +7,12 @@ def solution(progresses, speeds):
         if(progresses[0]>=100):
             for i in range(len(progresses)):
                 j=i
-                if(progresses[j-num]>=100): 
+                if(progresses[j-num]>=100):
                     del(progresses[j-num])
                     del(speeds[j-num])
-                    num+=1 
+                    num+=1
+                else:
+                    break
             if num > 0:
                 answer.append(num)
                 num = 0 
