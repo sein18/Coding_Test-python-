@@ -7,4 +7,4 @@ def solution(arr):
             answer.append(arr[i])
     return answer
 
-print(solution([4,4,4,3,3]))
+print(solution([4]))
