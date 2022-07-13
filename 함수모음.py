@@ -64,5 +64,5 @@ re.remove(3)
 print(re)
 # 리스트 요소 정렬
 re.sort()
-re= sorted(re,reverse=True)
+re = sorted(re,reverse=True)
 print(re)
