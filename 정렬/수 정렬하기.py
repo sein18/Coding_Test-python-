@@ -1,10 +1,10 @@
+import sys
  
-
 arr=[]
-num = int(input())
+num = int(sys.stdin.readline())
 for i in range(num):
-    arr.append(int(input()))
+    arr.append(int(sys.stdin.readline()))
 
 arr.sort()
 for i in range(num):
-    print(arr[i])
+    sys.stdout.write(arr([i]))
