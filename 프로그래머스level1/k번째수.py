@@ -2,7 +2,7 @@
 def solution(array, commands):
     answer = []
     for i in range(len(commands)):
-        st=[]
+        st = []
         for j in range(commands[i][0],commands[i][1]+1):
             st.append(array[j-1])
         
