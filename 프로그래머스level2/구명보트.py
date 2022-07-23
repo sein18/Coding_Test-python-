@@ -10,8 +10,7 @@ def solution(people, limit):
         sum += people[idx]
         if sum > limit:
             answer+=1
-            for i in range(idx):
-                print(i)
+            for i in range(idx): 
                 people.pop(0)
             sum=0
             idx=-1
