@@ -1,5 +1,4 @@
-from operator import le
-
+ 
 
 def solution(numbers, target):
     answer = 0
