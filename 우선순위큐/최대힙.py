@@ -7,7 +7,7 @@ heap = []
 for i in range(numbers):
     num = int(sys.stdin.readline())
     # print(num)
-    if num >0:
+    if num > 0:
         hq.heappush(heap,(-num,num)) #-를 하여 제일 큰 값이 맨 앞에 가도록 한다
     else:
         if heap:
