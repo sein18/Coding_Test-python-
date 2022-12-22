@@ -9,26 +9,26 @@ cals=deque()
 help=''
 for i in range(len(a)):
     if a[i].isnumeric():
-        help+=a[i]
+        help += a[i]
     else: #연산자 발견
         nums.append(int(help))
         cals.append(a[i])
-        help=''
+        help = ''
 
 nums.append(int(help))
 
 #print(nums,cals)
 
-ans=nums.popleft()
+ans = nums.popleft()
 
-ismi=False
+ismi = False
 for i in range(len(nums)):
-    if cals[i]=='-':
-        ismi=True
+    if cals[i] == '-':
+        ismi = True
 
-    if ismi==False:
-        ans+=nums[i]
+    if ismi == False:
+        ans += nums[i]
     else:
-        ans-=nums[i]
+        ans -= nums[i]
 
 print(ans) 
