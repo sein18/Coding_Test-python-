@@ -1,8 +1,8 @@
  
 def solution(lottos, win_nums):
-    cnt=0
-    cnt1=0
-    answer=[] 
+    cnt = 0
+    cnt1 = 0
+    answer = [] 
 
     for i in lottos:
         for j in win_nums:
