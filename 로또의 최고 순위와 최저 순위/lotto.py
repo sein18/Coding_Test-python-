@@ -14,7 +14,7 @@ def solution(lottos, win_nums):
     cnt2 = cnt1 + cnt
 
     win={6:1,5:2,4:3,3:4,2:5}
-    cnt2 = win.get(cnt2,6)
+    cnt2  = win.get(cnt2,6)
     cnt1 = win.get(cnt1,6)
     answer.append(cnt2)
     answer.append(cnt1)
