@@ -1,18 +1,18 @@
 import sys
 input = sys.stdin.readline
 N = int(input())
-paper=[list(map(int, input().split())) for _ in range(N)]
+paper = [list(map(int, input().split())) for _ in range(N)]
 
-blue=0
-white=0
+blue = 0
+white = 0
 
 def cutting(paper, N):
     global blue
     global white
-    if check(paper)==N*N:
-        blue+=1
+    if check(paper) == N*N:
+        blue += 1
         return
-    elif check(paper)==0:
+    elif check(paper) == 0:
         white+=1
         return
     one=[]
@@ -28,9 +28,9 @@ def cutting(paper, N):
 
 
 def check(paper):
-    result=0
+    result = 0
     for p in paper:
-        result+=sum(p)
+        result += sum(p)
     return result
 
 cutting(paper, N)
