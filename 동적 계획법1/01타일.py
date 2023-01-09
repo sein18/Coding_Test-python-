@@ -1,11 +1,11 @@
 import sys
-input=sys.stdin.readline
-n=int(input())
+input = sys.stdin.readline
+n = int(input())
 
-d=[0]*1000001
-d[1]=1
-d[2]=2
+d = [0]*1000001
+d[1] = 1
+d[2] = 2
 
 for k in range(3,n+1):
-    d[k]=(d[k-1]+d[k-2])%15746
+    d[k] = (d[k-1]+d[k-2])%15746
 print(d[n])
