@@ -2,14 +2,14 @@ import sys
 input = sys.stdin.readline
 
 N = int(input())
-paper=[list(map(int, input().split())) for _ in range(N)]
+paper = [list(map(int, input().split())) for _ in range(N)]
 
 first, second, thrid = 0, 0, 0
 def cutting(paper, N):
     global first
     global second
     global thrid
-    default=paper[0][0]
+    default = paper[0][0]
     flag=1
     for p in paper:
         for s in p:
@@ -17,9 +17,9 @@ def cutting(paper, N):
                 flag=0
                 break
     if flag:
-        if default==-1: first+=1
-        elif default==0: second+=1
-        elif default==1: thrid+=1
+        if default == -1: first += 1
+        elif default == 0: second += 1
+        elif default == 1: thrid += 1
         return
     a, b, c = [], [], []
     d, e, f = [], [], []
