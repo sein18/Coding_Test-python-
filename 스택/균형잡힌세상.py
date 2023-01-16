@@ -3,7 +3,7 @@ while True:
     str = input()
     if str == '.':
         break
-    li=[]
+    li = []
     for j in range(len(str)):
         if str[j] == '(' or str[j] == ')' or str[j] == '[' or str[j] == ']':
             li.append(str[j])
