@@ -2,16 +2,16 @@
 
 def solution(numbers, target):
     answer = 0
-    leavers=[0]
+    leavers = [0]
     for num in numbers:
-        tmp=[]
+        tmp = []
         for parent in leavers:
             tmp.append(parent+num)
             tmp.append(parent-num)
-        leavers=tmp
+        leavers = tmp
     for num in leavers:
         if num == target:
-            answer+=1
+            answer += 1
     return answer
 
 print(solution([1, 1, 1, 1, 1],3))
