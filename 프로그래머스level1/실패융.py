@@ -10,14 +10,14 @@ def solution(N, stages):
         k = 0
         for j in range(len(stages)):
             if stages[j] >= answer[i]:
-                n+=1
+                n += 1
             if stages[j] == answer[i]:
-                k+=1 
+                k += 1 
         num.append(k/n)     
-        t.append([num[i],answer[i]])
+        t.append([num[i], answer[i]])
     
-    t.sort(key= lambda x:x[0], reverse=True)
-    x=[]
+    t.sort(key = lambda x:x[0], reverse=True)
+    x = []
     for i in t:
         x.append(i[1])
     return x
